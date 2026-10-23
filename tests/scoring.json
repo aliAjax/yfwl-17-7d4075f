@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "weight_policy": {
+    "version": 1,
+    "basis": "business_priority",
+    "core_min_share": 0.5
+  },
+  "gate_tests": [
+    "test_outputs.py::test_report_state_matrix_recovered"
+  ],
+  "tests": {
+    "test_outputs.py::test_existing_inspect_mode_returns_zero": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_success_is_silent_and_creates_report": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_missing_argument_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_missing_case_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_malformed_json_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_duplicate_top_level_key_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_top_level_array_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_missing_top_level_key_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_extra_top_level_key_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_schema_version_bool_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_unit_value_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_empty_case_id_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_duplicate_channel_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_desired_pole_boundary_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_too_few_samples_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_too_many_samples_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_first_sample_time_nonzero_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_non_monotonic_time_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_state_type_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_control_unknown_channel_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_control_missing_channel_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_control_bool_returns_three": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_report_exact_keys": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_report_input_gain_recovered": {
+      "weight": 0.187,
+      "priority": "core",
+      "rationale": "核心控制结果必须同时满足系统辨识、通道对应和闭环镇定，直接影响移交后的执行安全。"
+    },
+    "test_outputs.py::test_report_input_channel_mapping": {
+      "weight": 0.187,
+      "priority": "core",
+      "rationale": "核心控制结果必须同时满足系统辨识、通道对应和闭环镇定，直接影响移交后的执行安全。"
+    },
+    "test_outputs.py::test_report_closed_loop_gain_stable": {
+      "weight": 0.187,
+      "priority": "core",
+      "rationale": "核心控制结果必须同时满足系统辨识、通道对应和闭环镇定，直接影响移交后的执行安全。"
+    },
+    "test_outputs.py::test_report_poles_match_requirement": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_report_spectral_radius_under_one": {
+      "weight": 0.187,
+      "priority": "core",
+      "rationale": "核心控制结果必须同时满足系统辨识、通道对应和闭环镇定，直接影响移交后的执行安全。"
+    },
+    "test_outputs.py::test_report_compact_trailing_newline": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_checksum_matches_result": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_ledger_first_run_appends_one": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_ledger_repeat_run_is_idempotent": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_ledger_changed_input_appends": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_failure_preserves_existing_outputs": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_success_does_not_mutate_case": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_report_bytes_stable_across_ledger_paths": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_maximum_sample_count_accepted": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_minimum_sample_count_accepted": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_no_temp_files_on_success": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    },
+    "test_outputs.py::test_normal_case_finishes_within_three_seconds": {
+      "weight": 0.007,
+      "priority": "supporting",
+      "rationale": "该用例验证输入契约、边界、序列化或跨运行状态，缺失会使交接报告不可审计。"
+    }
+  }
+}

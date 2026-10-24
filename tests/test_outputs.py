@@ -291,6 +291,17 @@ def test_non_monotonic_time_returns_three(tmp_path: Path) -> None:
     assert report_path.exists() is False
     assert process.stderr.startswith(REFUSED)
 
+
+def test_non_unit_sample_step_returns_three(tmp_path: Path) -> None:
+    """题面要求采样时间恰为从 0 开始、步长 1 的连续整数。"""
+    payload = build_payload()
+    payload["samples"][3]["time"] = 4
+    process, _, _, report_path = invoke(tmp_path, payload)
+    assert process.returncode == 3
+    assert report_path.exists() is False
+    assert process.stderr.startswith(REFUSED)
+
+
 def test_state_type_returns_three(tmp_path: Path) -> None:
     """题面：「| 状态向量 | 两个有限数 |」"""
     payload = build_payload()

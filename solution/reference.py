@@ -101,20 +101,16 @@ def validate_scenario(raw: dict[str, Any]) -> dict[str, Any]:
         raise Refusal("samples must contain between 8 and 64 records")
 
     normalized_samples: list[dict[str, Any]] = []
-    previous_time: int | None = None
     expected_channels = set(channels)
     for index, sample in enumerate(samples):
         if not isinstance(sample, dict):
             raise Refusal(f"samples[{index}] must be an object")
         require_exact_keys(sample, SAMPLE_KEYS, f"samples[{index}]")
         timestamp = sample["time"]
-        if type(timestamp) is not int or timestamp < 0:
-            raise Refusal(f"samples[{index}].time must be a non-negative integer")
-        if index == 0 and timestamp != 0:
-            raise Refusal("the first sample time must be 0")
-        if previous_time is not None and timestamp <= previous_time:
-            raise Refusal("sample times must be strictly increasing")
-        previous_time = timestamp
+        if type(timestamp) is not int or timestamp != index:
+            raise Refusal(
+                f"samples[{index}].time must equal its zero-based sample index"
+            )
 
         state = sample["state"]
         if (

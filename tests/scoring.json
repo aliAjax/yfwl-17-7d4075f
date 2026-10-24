@@ -6,7 +6,8 @@
     "core_min_share": 0.5
   },
   "gate_tests": [
-    "test_outputs.py::test_report_state_matrix_recovered"
+    "test_outputs.py::test_report_state_matrix_recovered",
+    "test_outputs.py::test_non_unit_sample_step_returns_three"
   ],
   "tests": {
     "test_outputs.py::test_existing_inspect_mode_returns_zero": {
